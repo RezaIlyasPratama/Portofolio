@@ -16,138 +16,119 @@
         body {
             font-family: 'Poppins', sans-serif;
             color: #333;
-            background-color: #f0f4f8;
+            background-color: #2c3e50; /* Dark blue background */
             line-height: 1.6;
         }
 
         header {
-            background-color: #1e2a38;
-            color: #ffffff;
-            padding: 30px 0;
+            background-color: #1a252f; /* Darker shade of blue */
+            color: #ecf0f1;
+            padding: 20px 0;
             text-align: center;
             position: sticky;
             top: 0;
             width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.8em; /* Adjusted size for better responsiveness */
             margin-bottom: 10px;
             font-weight: 700;
         }
 
-        header p {
-            font-size: 1.2em;
-            font-weight: 300;
-        }
-
-        nav {
-            background-color: #2a3a4b;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 500;
-            padding: 10px;
-            transition: color 0.3s, border-bottom 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #1abc9c;
-            border-bottom: 2px solid #1abc9c;
-        }
-
-        section {
+        .container {
             padding: 60px 20px;
             margin: 20px auto;
             max-width: 1200px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            background-color: #34495e; /* Dark blue background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        section h2 {
-            font-size: 2.4em;
-            border-bottom: 4px solid #1abc9c;
-            padding-bottom: 15px;
+        .nav-menu {
             margin-bottom: 30px;
-            font-weight: 700;
-            color: #1e2a38;
-        }
-
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s;
-        }
-
-        .project:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .project h3 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            font-weight: 600;
-            color: #1e2a38;
-        }
-
-        .project p {
-            font-size: 1em;
-            margin-bottom: 15px;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #1abc9c;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: background-color 0.3s, transform 0.2s;
-            font-weight: 500;
             text-align: center;
         }
 
-        .button:hover {
-            background-color: #16a085;
+        .nav-menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1abc9c; /* Fresh green color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #16a085; /* Slightly darker green */
+            transform: scale(1.05);
+        }
+
+        .project-section {
+            margin-bottom: 40px;
+            background-color: #ecf0f1; /* Light grey background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            color: #333;
+        }
+
+        .project-section h2 {
+            font-size: 1.6em; /* Adjusted size for better responsiveness */
+            border-bottom: 3px solid #e67e22; /* Dynamic orange accent */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .project-section p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item p {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db; /* Bright blue color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9; /* Slightly darker blue */
             transform: scale(1.05);
         }
 
         footer {
-            background-color: #1e2a38;
-            color: #ffffff;
+            background-color: #1a252f; /* Darker shade of blue */
+            color: #ecf0f1;
             text-align: center;
-            padding: 20px;
+            padding: 15px 20px;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -158,97 +139,43 @@
             font-size: 0.9em;
         }
 
-        .contact-info {
-            font-size: 1em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .contact-info a {
-            color: #1abc9c;
-            text-decoration: none;
-            transition: text-decoration 0.3s;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 1200px) {
-            section {
-                padding: 50px 15px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            header h1 {
-                font-size: 2em;
+        @media (max-width: 1024px) {
+            .container {
+                padding: 40px 15px;
             }
 
-            header p {
-                font-size: 1.1em;
+            .nav-menu a {
+                padding: 8px 15px;
+                font-size: 0.9em;
             }
 
-            nav ul li a {
-                font-size: 1em;
-                padding: 8px;
-            }
-
-            section h2 {
-                font-size: 2em;
-            }
-
-            .project h3 {
-                font-size: 1.3em;
+            .project-section h2 {
+                font-size: 1.4em;
             }
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            header p {
-                font-size: 1em;
-            }
-
-            nav ul li a {
+            .nav-menu a {
+                padding: 8px 15px;
                 font-size: 0.9em;
-                padding: 6px;
             }
 
-            section h2 {
-                font-size: 1.8em;
+            .project-section {
+                padding: 15px;
             }
 
-            .project h3 {
+            .project-section h2 {
                 font-size: 1.2em;
-            }
-
-            .projects-container {
-                grid-template-columns: 1fr;
             }
         }
 
         @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.6em;
-            }
-
-            header p {
-                font-size: 0.9em;
-            }
-
-            nav ul li a {
+            .nav-menu a {
+                padding: 6px 12px;
                 font-size: 0.8em;
-                padding: 5px;
             }
 
-            section h2 {
-                font-size: 1.6em;
-            }
-
-            .project h3 {
+            .project-section h2 {
                 font-size: 1.1em;
             }
         }
@@ -256,60 +183,77 @@
 </head>
 <body>
     <header>
-        <h1>Reza Ilyas Pratama</h1>
-        <p>Design | Excel | Data Visualization | Data Analysis | Programming</p>
+        <h1>Visualisasi Data Portfolio</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I specialize in design, Excel, data visualization, data analysis, and programming. My passion is transforming data into actionable insights and creating compelling visualizations to help make data-driven decisions.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>Data Visualization Dashboard</h3>
-                <p>Developed an interactive dashboard using Excel and Python to visualize key business metrics and trends. This project involved complex data manipulation and visualization techniques to provide actionable insights.</p>
-                <a href="project1.html" class="button">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Design Portfolio</h3>
-                <p>Created a series of design mockups and prototypes for various clients, including web and mobile applications. Focused on user experience and interface design to enhance usability and engagement.</p>
-                <a href="project-detail.html" class="button">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Data Analysis Report</h3>
-                <p>Conducted comprehensive data analysis on market trends using Excel and SQL. Delivered a detailed report with statistical analysis and actionable recommendations for strategic decision-making.</p>
-                <a href="project-detail.html" class="button">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Programming Challenge Solutions</h3>
-                <p>Completed various programming challenges in Python and JavaScript, demonstrating proficiency in algorithmic problem-solving and software development.</p>
-                <a href="project-detail.html" class="button">View Project</a>
-            </div>
+    <div class="container">
+        <div class="nav-menu">
+            <a href="#design">Desain</a>
+            <a href="#excel">Excel</a>
+            <a href="#data-analysis">Analisis Data</a>
+            <a href="#programming">Pemrograman</a>
         </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:rezailyaspratama@gmail.com">rezailyaspratama@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/reza-ilyas-pratama-679925267" target="_blank">www.linkedin.com/in/reza-ilyas-pratama-679925267</a></p>
-            <p><strong>Alamat:</strong> Sungai Duren, Jambi Luar Kota, Provinsi Jambi</p>
+        <div id="project-a" class="project-section">
+            <h2>Proyek A</h2>
+            <p>Description for Project A. This project involves detailed description and objectives.</p>
+            <div class="gallery-item">
+                <img src="images/project_a_image1.jpg" alt="Project A Screenshot 1">
+                <p>Keterangan foto 1: Overview of Project A.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/project_a_image2.jpg" alt="Project A Screenshot 2">
+                <p>Keterangan foto 2: Detailed view of Project A.</p>
+            </div>
+            <a href="files/project_a_presentation.pptx" class="download-button" download>Download PowerPoint Presentation</a>
         </div>
-    </section>
+
+        <div id="project-b" class="project-section">
+            <h2>Proyek B</h2>
+            <p>Description for Project B. This project focuses on specific aspects and goals.</p>
+            <div class="gallery-item">
+                <img src="images/project_b_image1.jpg" alt="Project B Screenshot 1">
+                <p>Keterangan foto 1: Overview of Project B.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/project_b_image2.jpg" alt="Project B Screenshot 2">
+                <p>Keterangan foto 2: Detailed view of Project B.</p>
+            </div>
+            <a href="files/project_b_presentation.pptx" class="download-button" download>Download PowerPoint Presentation</a>
+        </div>
+
+        <div id="project-c" class="project-section">
+            <h2>Proyek C</h2>
+            <p>Description for Project C. This project highlights specific results and methodologies.</p>
+            <div class="gallery-item">
+                <img src="images/project_c_image1.jpg" alt="Project C Screenshot 1">
+                <p>Keterangan foto 1: Overview of Project C.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/project_c_image2.jpg" alt="Project C Screenshot 2">
+                <p>Keterangan foto 2: Detailed view of Project C.</p>
+            </div>
+            <a href="files/project_c_presentation.pptx" class="download-button" download>Download PowerPoint Presentation</a>
+        </div>
+
+        <div id="project-d" class="project-section">
+            <h2>Proyek D</h2>
+            <p>Description for Project D. This project emphasizes different aspects and outcomes.</p>
+            <div class="gallery-item">
+                <img src="images/project_d_image1.jpg" alt="Project D Screenshot 1">
+                <p>Keterangan foto 1: Overview of Project D.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/project_d_image2.jpg" alt="Project D Screenshot 2">
+                <p>Keterangan foto 2: Detailed view of Project D.</p>
+            </div>
+            <a href="files/project_d_presentation.pptx" class="download-button" download>Download PowerPoint Presentation</a>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Reza Ilyas Pratama. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
