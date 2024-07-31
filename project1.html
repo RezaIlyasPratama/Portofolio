@@ -32,7 +32,7 @@
         }
 
         header h1 {
-            font-size: 2em;
+            font-size: 1.8em; /* Adjusted size for better responsiveness */
             margin-bottom: 10px;
             font-weight: 700;
         }
@@ -78,7 +78,7 @@
         }
 
         .project-section h2 {
-            font-size: 1.8em;
+            font-size: 1.6em; /* Adjusted size for better responsiveness */
             border-bottom: 3px solid #e67e22; /* Dynamic orange accent */
             padding-bottom: 10px;
             margin-bottom: 20px;
@@ -139,10 +139,33 @@
             font-size: 0.9em;
         }
 
+        @media (max-width: 1024px) {
+            .container {
+                padding: 40px 15px;
+            }
+
+            .nav-menu a {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+
+            .project-section h2 {
+                font-size: 1.4em;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-menu a {
                 padding: 8px 15px;
                 font-size: 0.9em;
+            }
+
+            .project-section {
+                padding: 15px;
+            }
+
+            .project-section h2 {
+                font-size: 1.2em;
             }
         }
 
@@ -150,6 +173,10 @@
             .nav-menu a {
                 padding: 6px 12px;
                 font-size: 0.8em;
+            }
+
+            .project-section h2 {
+                font-size: 1.1em;
             }
         }
     </style>
